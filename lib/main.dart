@@ -13,11 +13,10 @@ class GpsDoMundo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = GpsdoMundoTheme.dark();
-    // TODO: Aplicar o widget da página inicial
-    // 3
     return MaterialApp(
       theme: theme,
       title: 'GPS do Mundo',
+      // home: const Home(),
       // 4
       home: Scaffold(
         appBar: AppBar(
@@ -28,7 +27,8 @@ class GpsDoMundo extends StatelessWidget {
         ),
         body: Center(
           child:
-              Text('Bora conhecer 👩‍🍳', style: theme.textTheme.displayLarge),
+              Text('Bora conhecer 👩‍🍳', 
+              style: theme.textTheme.displayLarge),
         ),
       ),
     );
