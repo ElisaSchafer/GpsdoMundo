@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 import 'author_card.dart';
 import 'gpsdomundo_theme.dart';
 
@@ -11,6 +10,7 @@ class Card2 extends StatelessWidget{
     return Center(
       // 1
       child: Container(
+        padding: const EdgeInsets.all(16),
         constraints: const BoxConstraints.expand(
           width: 350,
           height: 450,
@@ -25,7 +25,7 @@ class Card2 extends StatelessWidget{
           ),
         ),
         // 2
-        child: Column(
+        child: const Column(
           children: [
               // TODO: Adicionar infromações do autor
               const AuthorCard(

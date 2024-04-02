@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'gpsdomundo_theme.dart';
 import 'main.dart';
@@ -73,8 +74,8 @@ class Card3 extends StatelessWidget {
                     label: Text('Natureza',
                       style: GpsdoMundoTheme.darkTextTheme.bodyLarge),
                       backgroundColor: Colors.black.withOpacity(0.7),
-                      onDeleted: (){
-                        log('delete');
+                      onDeleted: () {
+                        log('delete' as num);
                       },
                   ),
                   Chip(
@@ -82,7 +83,7 @@ class Card3 extends StatelessWidget {
                       style: GpsdoMundoTheme.darkTextTheme.bodyLarge),
                       backgroundColor: Colors.black.withOpacity(0.7),
                       onDeleted: (){
-                        log('delete');
+                        log('delete' as num);
                       },
                   ),
                   Chip(
@@ -90,7 +91,7 @@ class Card3 extends StatelessWidget {
                       style: GpsdoMundoTheme.darkTextTheme.bodyLarge),
                       backgroundColor: Colors.black.withOpacity(0.7),
                       onDeleted: (){
-                        log('delete');
+                        log('delete' as num);
                       },
                   ),
                 ],
