@@ -5,11 +5,13 @@ import 'package:flutter/material.dart';
 import 'card1.dart';
 import 'card2.dart';
 import 'card3.dart';
+
 // 12
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _HomeState createState() => _HomeState();
 }
 
@@ -65,5 +67,3 @@ class _HomeState extends State<Home> {
     );
   }
 }
-
-       

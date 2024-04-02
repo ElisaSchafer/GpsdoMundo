@@ -17,7 +17,7 @@ class AuthorCard extends StatelessWidget {
 
   // 2
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     // TODO: Substitua return Container(...) por...
     return Container(
       padding: const EdgeInsets.all(16),
@@ -34,29 +34,25 @@ class AuthorCard extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                authorName,
-                style: GpsdoMundoTheme.lightTextTheme.displayMedium
-              ),
-              Text(
-                title,
-                style: GpsdoMundoTheme.lightTextTheme.displaySmall)
+              Text(authorName,
+                  style: GpsdoMundoTheme.lightTextTheme.displayMedium),
+              Text(title, style: GpsdoMundoTheme.lightTextTheme.displaySmall)
             ],
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           ),
           // TODO: Adiciona IconButton
           IconButton(
-            // 4
-            icon: const Icon(Icons.favorite_border),
-            iconSize: 30,
-            color: Colors. Color.fromARGB(255, 8, 2, 2),
-            // 5
-            onPressed: () {
-              const snackBar = SnackBar(
-                content: Text('Favorite Pressed'),
-              );
-              ScaffoldMessenger.of(context).showSnackBar(snackBar);
-            })
+              // 4
+              icon: const Icon(Icons.favorite_border),
+              iconSize: 30,
+              color: const Color.fromARGB(255, 8, 2, 2),
+              // 5
+              onPressed: () {
+                const snackBar = SnackBar(
+                  content: Text('Favorite Pressed'),
+                );
+                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+              })
         ],
       ),
     );
